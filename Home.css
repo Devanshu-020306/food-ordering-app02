@@ -1,0 +1,92 @@
+.food-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.food-card {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+.food-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+.food-card button {
+  background: #e23744;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+}
+.filters {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.filters input {
+  width: 320px;
+  padding: 12px;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.categories {
+  display: flex;
+  flex-direction: row;   /* 🔥 IMPORTANT */
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+
+.categories button {
+  padding: 8px 18px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  background: #f2f2f2;
+  font-weight: 500;
+}
+
+.categories .active {
+  background: #e23744;
+  color: white;
+}
+.food-grid {
+  margin-top: 30px;   /* ✅ ADD */
+  padding-bottom: 40px;
+}
+.food-card {
+  position: relative;
+}
+
+.tag {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: #000;
+  color: #fff;
+  padding: 4px 8px;
+  font-size: 12px;
+  border-radius: 6px;
+}
+
+.tag.special {
+  top: 40px;
+  background: #0f9d58;
+}
+.filters {
+  margin-bottom: 30px;
+}
